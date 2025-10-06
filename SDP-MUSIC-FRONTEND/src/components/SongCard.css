@@ -1,0 +1,68 @@
+/* Song card container */
+.song-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background-color: var(--card-bg);
+  border-radius: 6px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+  transition: background-color 0.2s ease;
+}
+
+/* Hover effect */
+.song-card:hover {
+  background-color: #282828;
+}
+
+/* Song title */
+.song-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text);
+  margin: 0;
+}
+
+/* Song details */
+.song-card p {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin: 4px 0 0;
+}
+
+/* Add to playlist button */
+.song-card button {
+  padding: 8px 16px;
+  background-color: var(--primary);
+  color: var(--text);
+  border: none;
+  border-radius: 24px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Button hover */
+.song-card button:hover {
+  background-color: #1ed760;
+  transform: scale(1.05);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .song-card {
+    padding: 10px;
+  }
+  .song-card h3 {
+    font-size: 14px;
+  }
+  .song-card p {
+    font-size: 12px;
+  }
+  .song-card button {
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+}

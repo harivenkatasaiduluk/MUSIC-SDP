@@ -1,0 +1,48 @@
+.genres-container {
+  padding: 20px;
+}
+
+.genres-container h2 {
+  color: white;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.genres-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.genre-card {
+  background-color: #1e1e1e;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.genre-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.genre-card h3 {
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+}
+
+.genre-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .genre-card img {
+    height: 120px;
+  }
+}

@@ -1,0 +1,99 @@
+/* AdminLogin.css */
+
+.auth-container {
+  width: 350px;
+  max-width: 90%;
+  margin: 80px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  background-color: #1e1e1e;
+  color: #fff;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.auth-container:hover {
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.auth-container h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  letter-spacing: 1px;
+  color: #1db954;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.auth-form input {
+  padding: 12px 15px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background-color: #2c2c2c;
+  color: #fff;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.auth-form input:focus {
+  border-color: #1db954;
+  outline: none;
+  box-shadow: 0 0 5px #1db954;
+}
+
+.auth-form button {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1db954;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.auth-form button:hover {
+  background-color: #1ed760;
+  transform: translateY(-2px);
+}
+
+.auth-message {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #ff7676;
+}
+
+.auth-link {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #aaa;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.auth-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 400px) {
+  .auth-container {
+    padding: 30px 20px;
+  }
+
+  .auth-container h2 {
+    font-size: 20px;
+  }
+
+  .auth-form button {
+    font-size: 14px;
+  }
+}
